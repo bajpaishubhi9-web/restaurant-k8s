@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: shubhibajpai/restaurant-frontend:1.0
+          image: shubhibajpai/restaurant-frontend:3
           ports:
             - containerPort: 3000

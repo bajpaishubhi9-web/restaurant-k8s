@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: shubhibajpai/restaurant-backend:1.0
+          image: shubhibajpai/restaurant-backend:3
           ports:
             - containerPort: 5001
           env:
