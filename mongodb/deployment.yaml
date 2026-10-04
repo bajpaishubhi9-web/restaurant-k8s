@@ -20,4 +20,4 @@ spec:
             - containerPort: 27017
           env:
             - name: MONGO_INITDB_DATABASE
-              value: restaurant
+              value: restaurant_reviews
