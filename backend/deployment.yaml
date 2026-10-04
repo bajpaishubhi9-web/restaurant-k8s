@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: restaurant-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: shubhibajpai/restaurant-backend:1.0
+          ports:
+            - containerPort: 5001
+          env:
+            - name: MONGO_URI
+              value: mongodb://mongodb:27017/restaurant_reviews
+
+            - name: RESTREVIEWS_NS
+              value: restaurant_reviews
